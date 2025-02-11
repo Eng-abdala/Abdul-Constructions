@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Abdul Constractios</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</head>
+<body>
+    <!-- Header -->
+     
+     <div id="header" class="flex  justify-between  sm:items-center sm:bg-green-950 sm:fixed sm:z-20 w-full bg-yellow-500 sm:px-[0px] px-[30px] ">
+        <div id="head" class="flex justify-start gap-2 sm:bg-yellow-500 py-[20px] items-center sm:px-[80px]"> 
+            <i  class="fa-solid fa-person-digging text-[30px]"></i>
+
+            <h1 class="text-[25px] leading-6"><span class="font-bold">Abdul <br></span> Constractions</h1>
+        </div>
+        <ul id="ul" class="sm:flex sm:flex-row justify-center gap-11 hidden flex-col text-[20px] text-white py-[20px] pr-[80px]">
+            <li class="sm:text-yellow-500"><a href="#">HOME</a></li>
+            <li class="sm:hover:text-yellow-500"><a href="#service">SERVICES</a></li>
+            <li class="sm:hover:text-yellow-500"><a href="#about">ABOUT</a></li>
+            <li class="sm:hover:text-yellow-500"><a href="#projects">PROJECTS</a></li>
+            <li class="sm:hover:text-yellow-500"><a href="#contact">CONTACT</a></li>
+        </ul>
+        <div  class="sm:hidden flex">
+        <i id="menu" class="fa-solid fa-bars text-[20px] py-[20px] mt-[10px]"></i>
+        <i id="close" class="fa-solid fa-x text-[20px] py-[20px] mt-[10px]"></i>
+
+        </div>
+     </div>
+
+     <!-- Hero-section -->
+      <div class="relative h-screen overflow-hidden bg-black bg-fixed">
+        <video muted autoplay loop class=" absolute  inset-0 w-full h-full object-cover " src="vedios/v1.mp4" type="video/mp4"></video>
+    
+        <div class="relative z-10 flex justify-center  h-full mt-[10%]">
+            <div>
+                <h1 class="sm:text-[70px] text-[30px] font-bold text-white">
+                    LEADERS IN QUALITY <br>
+                    CONSTRUCTION AND <br>
+                    INFRASTRUCTURE</h1>
+                    <a class="text-white sm:text-[70px] ml-[40%] " href="#service"><i class="fa-solid fa-chevron-down"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services -->
+     <div id="services"  class="  bg-white h-full flex justify-center ">
+        <div id="service">
+            <h1 class="text-[60px] text-center leading-3 font-bold my-[10%]">SERVICES <br>
+            <span class="text-yellow-500 text-[100px]">_______</span></h1>
+
+            <div class="sm:flex sm:flex-row justify-center sm:items-center flex-col sm:my-[10px] my-[20%] gap-10">
+                <div class="w-[360px] h-[550px] bg-gray-50">
+                    <img class="w-[360px] h-[270px]" src="images/s1.avif" alt="">
+                    <h1 class="text-[30px] text-gray-500 font-bold leading-9 px-[30px] my-[15px]">
+                        Preconstruction <br> Planning</h1>
+                        <p class="text-[16px] text-gray-400 px-[40px]">
+                             
+                            At Abdul Constructions, we lay the foundation for success with comprehensive preconstruction planning. Our team collaborates closely with clients, architects, and engineers to develop detailed project plans, </p>
+
+
+                </div>
+                <div class="w-[360px] h-[550px] bg-gray-50 my-[20px]">
+                    <img class="w-[360px] h-[270px]" src="images/s2.avif" alt="">
+                    <h1 class="text-[30px] text-gray-500 font-bold leading-9 px-[30px] my-[15px]">
+                        Architectural <br>
+                        Modellin</h1>
+                        <p class="text-[16px] text-gray-400 px-[40px]">
+                             
+                            
+                            Bring your vision to life with our advanced architectural modeling services. Using cutting-edge technology, we create precise 3D models that allow you to visualize your project before construction begins.</p>
+
+
+                </div>
+                <div class="w-[360px] h-[550px] bg-gray-50">
+                    <img class="w-[360px] h-[270px]" src="images/s3.avif" alt="">
+                    <h1 class="text-[30px] text-gray-500 font-bold leading-9 px-[30px] my-[15px]">
+                        
+                     Construction 
+                    <br> Management</h1>
+                        <p class="text-[16px] text-gray-400 px-[40px]">
+                             
+                            
+                        
+                            Our construction management services are designed to deliver projects on time, within budget, and to the highest quality standards. From coordinating subcontractors to overseeing daily operations.</p>
+
+
+                </div>
+                
+            </div>
+        </div>
+
+     </div>
+
+     <!-- About -->
+      <div id="about" class="sm:flex sm:flex-row flex-col justify-end gap-9 bg-gray-50 mt-[10%]">
+        <div class="sm:w-[700px] w-[500px] bg-[url('images/about.avif')] flex sm:hidden  bg-fixed bg-cover h-screen">
+        </div>
+        <div class="sm:w-[550px] h-full w-[400px] sm:h-[350px] text-[18px] px-[30px] sm:px-[20px] text-gray-400">
+            <h1 class="text-[60px] text-center leading-3 font-bold my-[10%]">About <br>
+                <span class="text-yellow-500 text-[100px]">_______</span></h1>
+            <p class="leading-8 text-[18px] py-[10px] ">
+                
+                At Abdul Constructions, we build more than just structures—we build trust, quality, and lasting relationships. With years of experience in the construction industry, we specialize in delivering innovative, sustainable, and cost-effective solutions for residential, commercial, and industrial projects.
+
+                Our team of skilled professionals is dedicated to turning your vision into reality. From meticulous planning to flawless execution, we ensure every project is completed to the highest standards of craftsmanship and safety. Whether it's a dream home, a modern office space, or a large-scale infrastructure project, we approach every challenge with precision, passion, and integrity.
+
+                At the heart of Abdul Constructions is our commitment to excellence. We believe in transparency, timely delivery, and exceeding client expectations. Our mission is to create spaces that inspire, endure, and make a positive impact on communities.
+
+                Let us help you build the future. Partner with Abdul Constructions—where quality meets innovation.</p>
+            </p>
+        </div>
+
+        <div class="sm:w-[700px] w-[500px] bg-[url('images/about.avif')] hidden sm:inline  bg-fixed bg-cover h-screen">
+        </div>
+ 
+      </div>
+      <div class="w-full h-full sm:h-[200px] py-[20px] bg-yellow-400 grid sm:grid-cols-[300px_300px_300px_300px] text-center sm:pl-[100px] pl-[50px] grid-cols-[200px_200px]">
+        <div class="flex justify-center gap-6 items-center">
+            <div>
+                <h1 class="sm:text-[50px] text-[30px] font-bold text-gray-500">2010</h1>
+            <p class="sm:text-[30px] text-[20px] leading-10 text-gray-500">Year <br> Established</p>
+            </div>
+            <div class="w-[3px] h-[150px] hidden sm:inline bg-white"></div>
+
+        </div>
+        <div class="flex justify-center gap-6 items-center">
+            <div>
+                <h1 class="sm:text-[50px] text-[30px] font-bold text-gray-500">206</h1>
+            <p class="sm:text-[30px] text-[20px] leading-10 text-gray-500">Projects <br> Completed</p>
+            </div>
+            <div class="w-[3px] h-[150px] hidden sm:inline bg-white"></div>
+
+        </div>
+        <div class="flex justify-center gap-6 items-center">
+            <div>
+                <h1 class="sm:text-[50px] text-[30px] font-bold text-gray-500">870</h1>
+            <p class="sm:text-[30px] text-[20px] leading-10 text-gray-500">Contractors <br> Appointed</p>
+            </div>
+            <div class="w-[3px] hidden sm:inline h-[150px] bg-white"></div>
+
+        </div>
+        <div class="flex justify-center gap-6 items-center">
+            <div>
+                <h1 class="sm:text-[50px] text-[30px] font-bold text-gray-500">26</h1>
+            <p class="sm:text-[30px] text-[20px] leading-10 text-gray-500">Awords <br> Worn</p>
+            </div>
+
+        </div>
+
+
+      </div>
+
+      <!-- Projects -->
+
+      <div id="projects">
+
+          <h1 class="text-[60px] text-center leading-3 font-bold text-gray-500 my-[5%] mb-[10%]">Projects <br>
+            <span class="text-yellow-500 text-[100px]">_______</span></h1>
+            
+            <div class="grid sm:grid-cols-[500px_500px] grid-cols-[450px]  justify-center gap-11">
+                <div class=" group relative inline-block">
+                    <img class="w-[450px] h-[450px]  hover:opacity-30 " src="images/p1.jpg" alt="">
+                    <p class="absolute left-[40%] top-[50%] hidden group-hover:block text-center text-[20px]"> Project1</p>
+                </div>
+                <div class=" group relative inline-block">
+                    <img class="w-[450px] h-[450px]  hover:opacity-30 " src="images/p2.jpg" alt="">
+                    <p class="absolute left-[40%] top-[50%] hidden group-hover:block text-center text-[20px]"> Project2</p>
+                </div>
+                <div class=" group relative inline-block">
+                    <img class="w-[450px] h-[450px]  hover:opacity-30 " src="images/p3.jpg" alt="">
+                    <p class="absolute left-[40%] top-[50%] hidden group-hover:block text-center text-[20px]"> Project3</p>
+                </div>
+                <div class=" group relative inline-block">
+                    <img class="w-[450px] h-[450px]  hover:opacity-30 " src="images/p4.jpg" alt="">
+                    <p class="absolute left-[40%] top-[50%] hidden group-hover:block text-center text-[20px]"> Project4</p>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Clients -->
+         <div class="bg-gray-50 w-full h-[400px] my-[30px] p-[10px]">
+            
+            <h1 class="text-[60px] text-center leading-3 font-bold text-gray-500 my-[5%]  ">Clients <br>
+                <span class="text-yellow-500 text-[100px]">_______</span></h1>
+                <div class="flex justify-center ">
+                    <div class="grid sm:grid-cols-[200px_200px_200px] grid-cols-2">
+
+                        
+                        <img  class=" w-[150px] opacity-20 hover:opacity-100" src="images/o.avif" alt="">
+                        <img  class=" w-[150px] opacity-20 hover:opacity-100" src="images/v.avif" alt="">
+                        <img  class=" w-[150px] opacity-20 hover:opacity-100" src="images/u.avif" alt="">
+                    </div>
+                </div>
+         </div>
+
+            <!-- contacts -->
+         <h1 id="contact" class="text-[60px] text-center leading-3 font-bold text-gray-500 my-[5%] ">CONACT <br>
+            <span class="text-yellow-500 text-[100px]">_______</span></h1>
+            <!-- Map -->
+            <div class="bg-gray-50 ">
+                <div class="container relative z-10 flex justify-center p-4" >
+                    <div id="map" class="w-[800px] h-96"> </div>
+
+                </div>
+
+                <div class="sm:flex sm:flex-row flex-col justify-center gap-[100px] px-[20px] py-[50px]">
+                    <div class=" ">
+                        <h1 class="text-[20px] font-bold my-[20px]">Inquiries</h1>
+                        <p class="text-[18px] text-gray-500">For any inquiries, questions or commendations, <br> please call:+252-613-482561 or fill out the following form</p>
+
+                        <h1 class="text-[20px] font-bold my-[18px]">Contact Us</h1>
+                        <form action="">
+                            <label class="text-gray-500" for="name">First Name</label> <br>
+                            <input id="fName" class="sm:w-[500px] w-[450px] h-[40px] border-[3px]" type="text"> <br>
+                            <p id="p1" class="text-red-500"></p>
+                            <label class="text-gray-500 my-[25px]" for="name">Last Name</label> <br>
+                            <input id="lName" class="sm:w-[500px] w-[450px] h-[40px] border-[3px]" type="text"> <br>
+                            <p id="p2" class="text-red-500"></p>
+                            <label class="text-gray-500" for="name">Email</label> <br>
+                            <input id="email" class="sm:w-[500px] w-[450px] h-[40px] border-[3px]" type="Email" required> <br>
+                            <p id="p3" class="text-red-500"></p>
+                            <label class="text-gray-500 my-[25px]" for="name">Subject</label> <br>
+                            <input id="subject" class="sm:w-[500px] w-[450px] h-[40px] border-[3px]" type="text"> <br>
+                            <p id="p4" class="text-red-500"></p>
+                            <label class="text-gray-500" for="name">Message</label> <br>
+                            <input id="message" class="sm:w-[500px] w-[450px] h-[80px] border-[3px]" type="text"> <br>
+
+                            <button id="submit" class="bg-green-950 hover:bg-yellow-500 hover:text-green-950 ml-[40%] px-[20px] py-[3px] mt-[15px] rounded-md text-yellow-500 text-[17px]">Sumbit</button>
+                        </form>
+                        <p class="text-[18px] text-gray-500 mt-[20%] sm:flex hidden">&copy; 2025 by Abdul Constractions<p>
+                    </div>
+                    <div>
+                        <h1 class="text-[20px] font-bold">Head Office</h1>
+                        <p class="text-[18px] text-gray-500 my-[20px]">Yaaqshiid, Banaadir <br> Mogadishu, Somalia</p>
+                        <p class="text-[18px] text-gray-500">Info@abdul.com</p>
+                        <p class="text-[18px] text-gray-500 my-[5px]">Tell:+252-613-482561</p>
+                        <p class="text-[18px] text-gray-500">Fax: 123-456-7890</p>
+
+
+                        <h1 class="sm:mt-[50%] mt-[20px] text-[20px] font-bold">Employment</h1>
+
+                        <p class="text-[18px] text-gray-500 sm:mt-[50%] mt-[20px]">To apply for a job with Abdul Constuctions, <br> please send a cover letter together with your <br> C.V. to: info@abdul.com <br>
+                            <div class="bg-yellow-400 h-[6px] w-[60px]" ></div>
+                            <h1 class="text-[20px] font-bold mt-[18px]">Get a quote: +252-613-482561</h1>
+
+                        <p class="text-[18px] text-gray-500 mt-[10%] sm:hidden flex">&copy; 2025 by Abdul Constractions<p>
+
+                            <div class="sm:ml-[50%] mt-[10px]">
+                                <a href="https://www.facebook.com/watch?v=1342268440103542"><i class="fa-brands fa-facebook-f bg-green-950 text-[20px] text-white px-[12px] py-[8px] rounded-full"></i></a>
+                                <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin-in  bg-green-950 text-[20px] text-white px-[10px] py-[8px] rounded-full"></i> </a>
+                            </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        <script src="main.js"></script>
+</body>
+</html>
